@@ -30,7 +30,7 @@ task :build => :clean do |t|
   puts "=== GENERATE UNIVERSAL iOS BINARY (Device/Simulator) ==="
   execute "lipo -create '#{iphoneos_binary}' '#{iphonesimulator_binary}' -output '#{universal_binary}'"
   puts "\n=== COPY PRODUCTS ==="
-  execute "yes | rm -f products/*.h products/*.a products/LICENSE products/README.md"
+  execute "rm -f products/*.h products/*.a products/LICENSE products/README.md"
   execute "cp #{macosx_binary} products/libSpecta-macosx.a"
   execute "mv #{universal_binary} products/"
   execute "cp build/#{configuration}/*.h products/"
