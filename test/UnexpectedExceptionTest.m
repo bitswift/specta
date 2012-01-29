@@ -36,7 +36,7 @@ SpecEnd
   if([NSException instancesRespondToSelector:@selector(callStackSymbols)]) {
     expect(reason).toContain(@"Call Stack:");
     expect(reason).toContain(@"raiseException");
-    expect(reason).toContain(@"_UnexpectedExceptionTestSpec");
+    expect(reason).toContain(@"UnexpectedExceptionTest");
   }
   expect([exception filename]).toContain(@"UnexpectedExceptionTest.m");
   shouldRaiseException = NO;
