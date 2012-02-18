@@ -514,7 +514,7 @@
 		E9D96A1D14B6B8AA007D9521 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "Peter Jihoon Kim";
 			};
 			buildConfigurationList = E9D96A2014B6B8AA007D9521 /* Build configuration list for PBXProject "Specta" */;
